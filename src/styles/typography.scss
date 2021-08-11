@@ -1,0 +1,57 @@
+.HomePage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+    font-size:3.6rem;
+    span{
+        color:#6203bbd5;
+    }
+}
+
+.h-sub-test{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    .icon-holder{
+        margin-right:1rem;
+        .icon{
+         font-size: 3.3rem;
+         color:#a4acc4;
+         transition:all .4s ease-in-out;
+         border: 2px solid gray;
+         border-radius:50%;
+         padding:0.4rem;
+        }
+        .gh{
+            &:hover{
+           border: 3px solid #5f4687;
+           color:#5f4687; 
+            }
+        }
+        .ig{
+            &:hover{
+           border: 3px solid hsla(286, 100%, 54%, 0.925) ;
+           color:hsla(286, 100%, 54%, 0.925) ; 
+            }
+        }
+        .li{
+            &:hover{
+           border: 3px solid #0b88db;
+           color:#0b88db; 
+            }
+        }
+    }
+}
+

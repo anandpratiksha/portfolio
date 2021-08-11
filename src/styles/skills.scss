@@ -1,0 +1,8 @@
+.skills{
+    display: grid;
+    margin-top:1rem;
+    grid-template-columns: repeat(10 , 1fr);
+    .skill{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,169 @@
+.portfolis{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    // grid-gap:1rem;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    @media screen and (max-width:1500px) {
+       grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (max-width:900px) {
+        grid-template-columns: repeat(1,1fr);
+        width:80%;
+        object-fit: cover;
+     }
+    .portfolio{
+        .image-data{
+            position: relative;
+            &::before{
+                content: " ";
+                position: absolute;
+                left:15px;
+                top: 12px;
+                height:calc(100% - 30px);
+                width:calc(100% - 30px);
+                background-color:rgba(255, 255, 255, 0.692);
+                transform-origin:  top left;
+                transform: scale(0);
+                transition: all .5s ease-in-out;
+            }
+            &:hover::before{
+                transform: scale(1);
+            }
+            img{
+                width: 100%;
+                height: 28vh;
+                object-fit: cover;
+            }
+            .hover-items{
+                list-style: none;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding:1rem 2rem;
+                visibility: hidden;
+                li{
+                    a{
+                        padding:1rem;
+                        text-decoration: none;
+                        font-family: inherit;
+                        // display: grid;
+                        // justify-content:center;
+                        border-radius: 10px;
+                        background-color: #037fff;
+                        color:white;
+                        &:not(:last-child){
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .hover-items{
+                    visibility: visible;
+                    top: 50%;
+                    transition: all .5s ease-in-out;
+                }  
+            }
+        }
+        h5{
+            font-size:1.5rem;
+            font-weight:400;
+            color: aliceblue;
+            transition: all .2s ease-in-out .3s;
+            display: flex;
+            justify-content: center;
+            &:hover{
+                color: #0381ffaf;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn-port{
+    padding: 0.6rem 2rem;
+    background-color:#0381ff5b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size:inherit;
+    font-family: inherit;
+    color: white;
+    transition: all .5s ease-in-out;
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+    &:hover{
+        background-color: #037fff;
+    }
+    &:active{
+        background-color: #037fff;
+    }
+    &:focus{
+        background-color: #037fff;
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 10rem;
+    @media screen and (max: width 1270px){
+        margin:2rem 5rem;
+    }
+    @media screen and (max: width 1100px){
+        margin:2rem 2rem;
+    }
+}
+
+.btn1 button{
+  position: relative;
+  display: block;
+  margin: 50px;
+  border: none;
+  color: #b3ffff;
+  background: #222;
+  padding: 17px 60px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(34, 33, 33, 0);
+  overflow: hidden;
+  padding:1rem;
+}
+button:hover{
+  box-shadow: 0 5px 20px rgba(206, 203, 203, 0.4);
+  border: 1px solid #0381ffd0;
+}
+.btn1 button:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  transition: all .5s ease-in-out;
+}
+.btn1 button:after{
+  background: #124faad2;
+  transform: translate(-98%, -25%) rotate(45deg);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn1:hover button:after{
+  transform: translate(-9%, -25%) rotate(45deg);
+}
+button span{
+  position: relative;
+  z-index: 1;
+}
+

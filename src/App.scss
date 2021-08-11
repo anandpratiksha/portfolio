@@ -1,0 +1,60 @@
+@import './styles/layout';
+@import './styles/navbar';
+@import './styles/typography';
+@import './styles/title';
+@import './styles/about';
+@import './styles/contact';
+@import './styles/project';
+@import './styles/skills';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a4acc4;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+
+span{
+    color: #037fff;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(8, 13, 44, 0.295);
+    border-radius:50px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color:#777;
+}
+
+@media screen and(max-width: 411px){
+  html{
+    font-size:70%;
+  }
+}
+
+@media screen and(max-width: 700px){
+    html{
+      font-size:100%;
+    }
+}
+
+@media screen and(max-width: 480px){
+   h2{
+       font-size:70%;
+   }
+   h3{
+    font-size:70%;
+}
+}
+  
+
