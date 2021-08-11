@@ -1,1 +1,1 @@
-<h1><a target="_blank" href="https://pratikshasportfolio.netlify.app/">Portfolio using React js</a></h1>
+<h1><a href="https://pratikshasportfolio.netlify.app/" target="_blank">Portfolio using React js</a></h1>
