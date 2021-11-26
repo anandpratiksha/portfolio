@@ -7,9 +7,9 @@ function ImageSection() {
                 <img src={about} alt="img" />
             </div>
             <div className="about-info">
-                <h4>Hello !!<br /> I am, <span>Pratiksha Ramesh Anand.</span> <br />Product Engineer in Web Development</h4>
+                <h4>Hello !!<br /> I am, <span>Pratiksha Ramesh Anand.</span> <br />Web Developer(Product Engineer)</h4>
                 <p className="about-text">
-                    “I’m not a great programmer,I’m just a good programmer with great habits.”
+                    “I’m not a great programmer,I’m a good programmer with great habits.”
                 </p>
                 <h1>Basic Information</h1>
                 <div className="about-details">
